@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply the default font globally */
+body {
+  font-family: 'Outfit', sans-serif;
+  @apply bg-midnightblue text-white;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: theme('colors.midnightblue');
+}
+
+/* Global link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    /* fonts */
+    --font-outfit-reg: Outfit-reg;
+    --font-outfit-bold: Outfit-bold;
+    --font-roboto: Roboto;
+
+    /* font sizes */
+    --h1-size: 48px;
+
+    /* Colors */
+    --color-midnightblue: #06053e;
+    --color-white: #ffffff;
+    --color-cornflowerblue: #8080d7;
+    --color-peachpuff: #ffc2b0;
+    --color-paleturquoise: #82f8f8;
+    --color-pink: #e19ee5;
+    --color-plum: #c499f3;
+    --color-darkcyan: #009b9b;
+    --color-purple: #7500ac;
+    --color-darkpurple: #2d0042;
+    --color-brightpink: #f700ff;
+}
