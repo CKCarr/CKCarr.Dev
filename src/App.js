@@ -3,22 +3,23 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CustomNavbar from './components/CustomNavbar';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
-import AboutMePage from './pages/AboutMePage';
+import BlogPage from './pages/BlogPage';
+import ResumePage from './pages/ResumePage'
 import Footer from './components/Footer';
 import './App.css';
-
 import './styles/styles.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-midnightblue text-white">
+      <div className="min-h-screen bg-gradient-to-b from-midnightblue via-cornflowerblue via-paleturquoise via-plum via-purple to-midnightblue text-white">
+
         <Router>
-        <CustomNavbar  />
-        <div className='mb-5'></div>
+        <CustomNavbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/about" element={<AboutMePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/resume" element={<ResumePage />} />
         </Routes>
         <Footer />
       </Router>

@@ -3,7 +3,7 @@ import ProjectPortfolio from '../components/ProjectComponents/ProjectPortfolio.j
 
 function ProjectsPage() {
   return (
-    <div className='pt-12'>
+    <div id='portfolio' className=' pt-16'>
       <ProjectPortfolio/>
 
     </div>

@@ -13,8 +13,8 @@ logs
 // build output
 build
 dist
-public
-src
+# public
+# src
 
 // misc
 .DS_Store

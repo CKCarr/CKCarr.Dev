@@ -1,5 +1,5 @@
 import React from 'react';
-import mobileContact from '../assets/images/mobile-contact.png';
+import mobileContact from '../../assets/images/mobile-contact.png';
 
 function CTALinkedin() {
   return (
@@ -8,7 +8,7 @@ function CTALinkedin() {
         <div className="contact-content row">
           <div className="building-art-content col col-lg-4 col-md-4 col-sm-6 mx-auto w-50">
             <h5 className="text-info mt-5">Follow Me For More</h5>
-            <h1 className="my-3">Let’s Connect, Collaborate, And Create!</h1>
+            <h1 className="my-3 text-2xl">Let’s Connect, Collaborate, And Create!</h1>
             <p className="mb-4">
               I am usually found in a learning objective, tutorial, or fun coding craft. I love to learn, craft, game, and help build others up along the way.
             </p>

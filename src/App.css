@@ -59,3 +59,17 @@ picture {
     --color-darkpurple: #2d0042;
     --color-brightpink: #f700ff;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}

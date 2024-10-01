@@ -1,11 +1,12 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection.js';
-import AboutSection from '../components/AboutSection.js';
-import TechnologiesTools from '../components/TechnologiesTools.js';
-import ProjectsSection from '../components/ProjectsSection.js';
-import CTAGithub from '../components/CTAGithub.js';
-import CTALinkedin from '../components/CTALinkedin.js';
-import ContactForm from '../components/ContactForm.js'
+import HeroSection from '../components/HomepageComponents/HeroSection.js';
+import AboutSection from '../components/HomepageComponents/AboutSection.js';
+import TechnologiesTools from '../components/HomepageComponents/TechnologiesTools.js';
+import ProjectsSection from '../components/HomepageComponents/ProjectsSection.js';
+import ScrollingBanner from '../components/HomepageComponents/ScrollingBanner.js';
+import CTAGithub from '../components/HomepageComponents/CTAGithub.js';
+import CTALinkedin from '../components/HomepageComponents/CTALinkedin.js';
+import ContactForm from '../components/HomepageComponents/ContactForm.js'
 
 function HomePage() {
   return (
@@ -20,10 +21,12 @@ function HomePage() {
       <TechnologiesTools />
       </div>
       <div id='projects' className=''>
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       </div>
+
       <div>
       <CTAGithub />
+      <ScrollingBanner/>
       <CTALinkedin />
       </div>
       <div id='contact' className=''>

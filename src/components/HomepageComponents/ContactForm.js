@@ -2,13 +2,14 @@ import React from 'react';
 
 function ContactForm() {
   return (
-    <div  className='mt-3 pt-3 '>
+    <div  className='mt-5 pt-3 '>
     <h1  className="h1-colors text-center d-flex justify-content-center">
           <span className="color-p">Contact</span>✨<span className="color-b">Me</span>
         </h1>
+        <hr className=" w-3/4 border-7 mt-5 border-darkcyan mx-auto"></hr>
         {/* Contact Form */}
-    <section id="contact" className="container my-5 d-flex justify-content-center text-white  bg-white">
-      <div className="container  m-3 bg-darkcyan d-flex justify-content-center">
+    <section id="contact" className="container my-5 d-flex justify-content-center text-white ">
+      <div className="container  m-3 bg-cornflowerblue border-4 border-darkcyan d-flex justify-content-center">
         <form
           className="m-5 text-darkpurple"
           action="https://formspree.io/f/xrgngdlq"

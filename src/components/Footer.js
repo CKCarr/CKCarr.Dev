@@ -2,8 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="footer container-fluid">
-      <div className="footer-content d-flex justify-content-around row">
+    <footer className="container-fluid pb-4">
+      <hr className=" w-3/4 border-7 border-darkcyan mx-auto"></hr>
+      <div className=" d-flex justify-content-around row">
         <aside className="footer-icons text-center mt-4">
           <a href="https://github.com/CKCarr">
             <i className="bi bi-github"></i>
@@ -21,7 +22,7 @@ function Footer() {
         </address>
       </div>
       <div className="copy">
-        <p className="text-center mb-sm-0 mt-">
+        <p className="text-center mb-sm-0 mt-4">
           Copyright &copy; 2024 CKCarr.dev <br />
           All Rights Reserved.
         </p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard.js';
 import SearchComponent from './SearchComponent.js';
-import projectsData from './projects.js';
+import projectsData from '../../data/projects.js';
 
 function ProjectPortfolio() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -18,14 +18,18 @@ function ProjectPortfolio() {
   });
 
   return (
-    <section className="projects my-5 p-12">
-      <h1 className="text-center text-4xl font-bold mb-8">Project Portfolio</h1>
+    <section className="projects my-5 p-6 w-full max-w-screen-xl mx-auto">
+      <h1 className="text-center text-4xl font-bold mb-8">
+        <span className="color-b">Project</span>
+        ✨
+        <span className="color-p">Portfolio</span>
+      </h1>
 
       {/* Search bar */}
       <SearchComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       {/* Tag filter buttons */}
-      <div className="flex justify-center space-x-2 mt-4">
+      <div className="flex flex-wrap justify-center space-x-2 mt-4">
         {allTags.map((tag, idx) => (
           <button
             key={idx}

@@ -1,8 +1,8 @@
 import React from 'react';
-import project1 from '../assets/images/MuseumOfImagination-project.png';
-import project2 from '../assets/images/BreakfastHacksprint-project.png';
-import ckLogo from '../assets/images/ck-logo.png';
-import fileBox from '../assets/images/file-box.png';
+import project1 from '../../assets/images/MuseumOfImagination-project.png';
+import project2 from '../../assets/images/BreakfastHacksprint-project.png';
+import ckLogo from '../../assets/images/ck-logo.png';
+import fileBox from '../../assets/images/file-box.png';
 
 function ProjectsSection() {
   return (
@@ -15,7 +15,7 @@ function ProjectsSection() {
         <span className="color-p">Portfolio</span>
       </h1>
 
-      <h2 className="text-center mt-5"><span className="colors">Checkout what I have been working on</span></h2>
+      <hr className=" w-3/4 mt-5 border-7 border-darkcyan mx-auto"></hr>
 
       <div className="project-container container p-2">
 
