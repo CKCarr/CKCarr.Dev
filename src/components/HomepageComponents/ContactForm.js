@@ -8,9 +8,9 @@ function ContactForm() {
         </h1>
         {/* Contact Form */}
     <section id="contact" className="container my-5 d-flex justify-content-center text-white ">
-      <div className="container  m-3 bg-cornflowerblue border-4 border-darkcyan d-flex justify-content-center">
+      <div className="container m-3 bg-cornflowerblue border-4 border-darkcyan d-flex justify-content-center">
         <form
-          className="m-5 text-darkpurple"
+          className=" m-5 text-white"
           action="https://formspree.io/f/xrgngdlq"
           method="POST"
           data-success="Thank you for your submission!"

@@ -16,10 +16,10 @@ function BlogPostCard({ imageSrc, title, content }) {
           className="img img-fluid rounded-full mx-auto mb-4 border-2 border-darkcyan"
           src={imageSrc}
           alt={title}
-          style={{ width: '245px', height: '245px' }}
+          style={{ width: '245px', height: '245px', border: "2" }}
         />
       )}
-      
+
       {/* Blog Post Content */}
       <div className="text-center bg-white border-darkcyan border-solid border-2 p-5">
         {/* Blog Post Title */}

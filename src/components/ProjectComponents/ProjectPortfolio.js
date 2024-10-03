@@ -52,23 +52,24 @@ function ProjectPortfolio() {
       </h1>
 
       {/* Sticky container for Search Bar and Filters */}
-      <div className={`${isSticky ? 'sticky top-16 z-10' : ''} bg-cornflowerblue bg-opacity-90 p-4 shadow-lg`}>
+      <div className={`${isSticky ? 'sticky top-24 z-10' : ''} bg-cornflowerblue bg-opacity-90 shadow-lg`}>
         {/* Search bar */}
         <SearchComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-        {/* Tag filter buttons */}
+
+      </div>
+              {/* Tag filter buttons */}
         <div className="flex flex-wrap justify-center space-2 mt-4">
           {allTags.map((tag, idx) => (
             <button
               key={idx}
               onClick={() => setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag])}
-              className={`px-4 py-2 rounded ${selectedTags.includes(tag) ? 'bg-darkcyan text-white' : 'bg-white text-darkcyan'} border-2 border-darkcyan hover:bg-darkcyan hover:text-white transition`}
+              className={`px-4 py-2 rounded ${selectedTags.includes(tag) ? 'bg-darkcyan text-white' : 'bg-white text-darkcyan'} border-2 border-darkcyan hover:bg-darkcyan hover:text-white transition `}
             >
               {tag}
             </button>
           ))}
         </div>
-      </div>
 
       <Divider />
 
