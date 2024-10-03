@@ -2,10 +2,10 @@ import React from 'react';
 
 function Card({ imageSrc, title, content }) {
   return (
-    <div className="border-4 border-darkcyan bg-cornflowerblue rounded-lg shadow-lg my-4 mx-auto max-w-sm lg:max-w-md p-6">
+    <div className=" bg-cornflowerblue rounded-lg shadow-lg my-4 mx-auto max-w-sm lg:max-w-md p-6">
       {/* Image */}
       <img
-        className="w-48 h-48 rounded-full mx-auto mb-4 border-4 border-darkcyan"
+        className="border-2 border-darkcyan w-48 h-48 rounded-full mx-auto mb-4 "
         src={imageSrc}
         alt={title}
       />

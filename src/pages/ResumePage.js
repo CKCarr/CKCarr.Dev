@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePdf from '../assets/CKCarrillo-RESUME.pdf'; // Path to your PDF
+import resumePdf from '../assets/CKCarrillo-RESUME.pdf';
 
 function ResumePage() {
 

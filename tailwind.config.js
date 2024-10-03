@@ -34,6 +34,10 @@ module.exports = withMT({
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('postcss-import'),
+
+    require('tailwindcss'),
+
+    require('autoprefixer'),
   ],
 });

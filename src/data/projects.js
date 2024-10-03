@@ -2,26 +2,25 @@ const projectsData = [
   {
     id: 1,
     name: "Museum of Imagination",
-    image: "/images/project1.png", // Replace with actual image path
+    image: require("../assets/images/projects/MuseumOfImagination-project.png"),
     description: "A virtual museum experience using modern web technologies.",
     tags: ["HTML", "CSS", "JavaScript", "Three.js"],
-    link: "https://example.com/museum-of-imagination" // Replace with actual project link
+    link: "https://wonderland-3c94c.firebaseapp.com/index.html"
   },
   {
     id: 2,
     name: "Breakfast Bites & Bytes",
-    image: "/images/project2.png", // Replace with actual image path
-    description: "A website for healthy breakfast recipes powered by APIs.",
+    image: require("../assets/images/projects/BreakfastHacksprint-project.png"),    description: "A website for healthy breakfast recipes powered by APIs.",
     tags: ["HTML", "CSS", "Bootstrap"],
-    link: "https://example.com/breakfast-bites" // Replace with actual project link
+    link: "https://ckcarr.github.io/breakfast_hacksprint/"
   },
   {
     id: 3,
     name: "Printf - C Language",
-    image: "/images/project3.png", // Replace with actual image path
+    image: "/images/project3.png",
     description: "Recreated the 'printf' function in C, with formatting capabilities.",
     tags: ["C", "Standard I/O"],
-    link: "https://github.com/CKCarr/printf" // Replace with actual GitHub or project link
+    link: "https://github.com/CKCarr/holbertonschool-printf"
   },
   {
     id: 4,

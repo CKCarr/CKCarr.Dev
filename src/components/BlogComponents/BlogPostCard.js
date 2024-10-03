@@ -9,11 +9,11 @@ function BlogPostCard({ imageSrc, title, content }) {
   ));
 
   return (
-    <div className="border-4 border-darkcyan bg-cornflowerblue rounded-lg shadow-lg my-4 mx-auto w-3/4 p-6">
+    <div className=" bg-cornflowerblue rounded-lg shadow-lg my-4 mx-auto w-3/4 p-6">
       {/* Blog Post Image */}
       {imageSrc && (
         <img
-          className="img img-fluid rounded-full mx-auto mb-4 border-4 border-darkcyan"
+          className="img img-fluid rounded-full mx-auto mb-4 border-2 border-darkcyan"
           src={imageSrc}
           alt={title}
           style={{ width: '245px', height: '245px' }}

@@ -8,16 +8,8 @@ html {
 
 /* Apply the default font globally */
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', "Roboto", sans-serif;
   @apply bg-midnightblue text-white;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: theme('colors.midnightblue');
 }
 
 /* Global link styles */
@@ -27,39 +19,178 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 }
 
 /* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
+
+h2,
+h3 {
+    border-bottom: 4px solid theme('colors.plum');
+    border-top: 4px solid theme('colors.plum');
+}
+
+img {
+    width: 100%;
+}
+.color-b {
+    color: theme('colors.darkcyan');
+}
+
+.color-p {
+    color: theme('colors.plum');
+}
+
+/* NAVIGATION */
+.logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: theme('colors.darkpurple');
+    border: 2px solid theme('colors.darkcyan');
+    margin: 0 auto;
+    display: block;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+footer,
+footer a {
+    text-decoration: none;
+    color: theme('colors.darkcyan');
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer a,
+.footer-icons,
+footer address {
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.footer-icons i {
+    font-size: 2rem;
+}
+
+footer i:hover {
+    color: theme('colors.purple');
+}
+
+
+/* TECH && TOOLS */
+/* #tech-tools {
+    width: 75%;
+} */
+
+.skill-icons {
+    background-color: theme('colors.cornflowerblue');
+    border: 4px solid theme('colors.darkcyan');
+    border-radius: 6%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box {
+    background-color: theme('colors.white');
+    align-content: center;
+    border-radius: 25%;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+    margin: 2px auto;
     display: block;
 }
 
-:root {
-    /* fonts */
-    --font-outfit-reg: Outfit-reg;
-    --font-outfit-bold: Outfit-bold;
-    --font-roboto: Roboto;
+/* FORM CSS */
 
-    /* font sizes */
-    --h1-size: 48px;
-
-    /* Colors */
-    --color-midnightblue: #06053e;
-    --color-white: #ffffff;
-    --color-cornflowerblue: #8080d7;
-    --color-peachpuff: #ffc2b0;
-    --color-paleturquoise: #82f8f8;
-    --color-pink: #e19ee5;
-    --color-plum: #c499f3;
-    --color-darkcyan: #009b9b;
-    --color-purple: #7500ac;
-    --color-darkpurple: #2d0042;
-    --color-brightpink: #f700ff;
+form label {
+    font-family: theme('fontFamily.outfit');
+    font-size: large;
+    color: theme('colors.white');
+    padding-left: 0.5rem;
 }
 
+::placeholder {
+    color: theme('colors.plum');
+    font-size: small;
+    font-family: theme('fontFamily.outfit');
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    background: theme('colors.darkpurple');
+    width: 100%;
+    padding: 8px;
+    border: 2px solid theme('colors.darkcyan');
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#contact-form-section textarea {
+    height: 200px;
+    width: 300px;
+}
+
+/* FORM BUTTON STYLES */
+input[type=submit] {
+    background-color: theme('colors.darkpurple');
+    color: theme('colors.plum');
+    padding: 12px 20px;
+    border: 4px solid theme('colors.darkcyan');
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: theme('fontFamily.outfit');
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+input[type=submit]:hover {
+    border: 4px solid theme('colors.plum');
+    background-color: theme('colors.darkpurple');
+    color: theme('colors.plum');
+}
+
+/* BUTTON STYLES */
+.btn {
+    width: 45%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: theme('fontFamily.outfit');
+    font-size: 1.2rem;
+}
+
+.github-btn,
+.linkedin-btn {
+    width: 80%;
+    text-decoration: none;
+}
+
+/** ANIMATIONS */
+
+/* Scroll animation */
 @keyframes scroll {
   0% {
     transform: translateX(100%);
@@ -72,4 +203,17 @@ picture {
 .animate-scroll {
   display: inline-block;
   animation: scroll 20s linear infinite;
+}
+
+/* Typewriter effect */
+
+#typewriter::after {
+    content: "|"; /* cursor */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }

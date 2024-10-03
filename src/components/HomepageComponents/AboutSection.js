@@ -6,7 +6,7 @@ import goalsImage from '../../assets/images/goals.png';
 
 function AboutSection() {
   return (
-    <section id="about" className="overflow-hidden p-5 text-midnightblue">
+    <section id="about" className="overflow-hidden  text-midnightblue">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-center">
         {/* Card 1 - My Story */}
         <Card
@@ -20,7 +20,7 @@ function AboutSection() {
         <Card
           imageSrc={processImage}
           title="My Process"
-          content="I work closely with clients to fully understand their unique needs and preferences, ensuring each project reflects their vision. By fostering open communication and collaboration, I deliver high-quality, custom solutions that align with client goals and expectations."
+          content="I aim to work closely with clients to fully understand their unique needs and preferences, ensuring each project reflects their vision. By fostering open communication and collaboration, I can deliver high-quality, custom solutions that align with client goals and expectations."
           cardClass="w-1/2 animate__animated animate__fadeInUp animate__delay-3s"
         />
 

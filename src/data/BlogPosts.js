@@ -1,5 +1,5 @@
 // src/data/blogPosts.js
-
+// This file contains an array of blog post objects. Each object has an id, title, content property, and an optional image. The content property contains the text content of the blog post. The blogPosts array is exported to be used in the BlogPage component to render the blog posts.
 const blogPosts = [
     {
         id: 1,
@@ -20,6 +20,7 @@ const blogPosts = [
         id: 4,
         title: "Why I Love Coding",
         content: `There’s something incredibly rewarding about coding – the ability to solve problems, create something from nothing, and see your work come to life on the screen. Every line of code is like a building block, helping me to bring my ideas into reality.`,
+        imageSrc: "https://via.placeholder.com/150",
     },
     {
         id: 5,

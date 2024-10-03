@@ -7,7 +7,6 @@ import BlogPage from './pages/BlogPage';
 import ResumePage from './pages/ResumePage'
 import Footer from './components/Footer';
 import './App.css';
-import './styles/styles.css';
 
 function App() {
   return (

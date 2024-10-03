@@ -18,22 +18,92 @@ export default function CustomNavbar() {
   }, []);
 
   // Reusable links to keep consistency across desktop and mobile menus
-  const navLinks = (
+  const desktopNavLinks = (
     <>
       <HashLink smooth to="/#home" onClick={() => setOpenNav(false)}>
-        <Button variant="text" className="text-white w-full text-sm">🏠 Home</Button>
+        <Button
+          variant="text"
+          className="text-white text-sm border-2 border-darkcyan hover:border-plum w-full lg:w-auto px-4 py-2 transition-all"
+        >
+          🏠 Home
+        </Button>
       </HashLink>
       <Link to="/blog" onClick={() => setOpenNav(false)}>
-        <Button variant="text" className="text-white w-full text-sm">👋 Blog</Button>
+        <Button
+          variant="text"
+          className="text-white text-sm border-2 border-darkcyan hover:border-plum w-full lg:w-auto px-4 py-2 transition-all"
+        >
+          👋 Blog
+        </Button>
       </Link>
       <Link to="/projects" onClick={() => setOpenNav(false)}>
-        <Button variant="text" className="text-white w-full text-sm">🗃️ Projects</Button>
+        <Button
+          variant="text"
+          className="text-white text-sm border-2 border-darkcyan hover:border-plum w-full lg:w-auto px-4 py-2 transition-all"
+        >
+          🗃️ Projects
+        </Button>
       </Link>
       <Link to="/resume" onClick={() => setOpenNav(false)}>
-        <Button variant="text" className="text-white w-full text-sm">📄 Resume</Button>
+        <Button
+          variant="text"
+          className="text-white text-sm border-2 border-darkcyan hover:border-plum w-full lg:w-auto px-4 py-2 transition-all"
+        >
+          📄 Resume
+        </Button>
       </Link>
       <HashLink smooth to="/#contact" onClick={() => setOpenNav(false)}>
-        <Button variant="text" className="text-white w-full text-sm">📩 Contact Me</Button>
+        <Button
+          variant="text"
+          className="text-white text-sm border-2 border-darkcyan hover:border-plum w-full lg:w-auto px-4 py-2 transition-all"
+        >
+          📩 Contact Me
+        </Button>
+      </HashLink>
+    </>
+  );
+
+  const mobileNavLinks = (
+    <>
+      <HashLink smooth to="/#home" onClick={() => setOpenNav(false)}>
+        <Button
+          variant="text"
+          className="text-white text-sm w-full px-1 py-1 border-l-2  border-r-2 border-darkcyan hover:border-plum transition-all"
+        >
+          🏠 Home
+        </Button>
+      </HashLink>
+      <Link to="/blog" onClick={() => setOpenNav(false)}>
+        <Button
+          variant="text"
+          className="text-white text-sm w-full px-1 py-1 border-l-2 border-r-2 border-darkcyan hover:border-plum transition-all"
+        >
+          👋 Blog
+        </Button>
+      </Link>
+      <Link to="/projects" onClick={() => setOpenNav(false)}>
+        <Button
+          variant="text"
+          className="text-white text-sm w-full px-1 py-1 border-l-2 border-r-2 border-darkcyan hover:border-plum transition-all"
+        >
+          🗃️ Projects
+        </Button>
+      </Link>
+      <Link to="/resume" onClick={() => setOpenNav(false)}>
+        <Button
+          variant="text"
+          className="text-white text-sm w-full px-1 py-1 border-l-2 border-r-2 border-darkcyan hover:border-plum transition-all"
+        >
+          📄 Resume
+        </Button>
+      </Link>
+      <HashLink smooth to="/#contact" onClick={() => setOpenNav(false)}>
+        <Button
+          variant="text"
+          className="text-white text-sm w-full px-1 py-1 border-l-2 border-r-2 border-darkcyan hover:border-plum transition-all"
+        >
+          📩 Contact Me
+        </Button>
       </HashLink>
     </>
   );
@@ -41,7 +111,7 @@ export default function CustomNavbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <Navbar id="header" className="fixed flex top-0 z-10 bg-midnightblue px-4 py-2 mb-4 w-full xl:w-full max-w-none">
+      <Navbar id="header" className="fixed flex top-0 z-40 bg-midnightblue px-4 py-2 mb-4 w-full xl:w-full max-w-none">
         <div className="w-full mx-auto flex items-center justify-between text-white">
           {/* Logo */}
           <a href="/" className="flex items-center">
@@ -50,7 +120,7 @@ export default function CustomNavbar() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex xl:flex space-x-6">
-            {navLinks}
+            {desktopNavLinks}
           </div>
 
           {/* Mobile Hamburger Icon */}
@@ -67,7 +137,7 @@ export default function CustomNavbar() {
         </div>
       </Navbar>
 
-      {/* Mobile Navigation (using state toggle) */}
+      {/* Mobile Navigation */}
       {openNav && (
         <div className="lg:hidden bg-midnightblue mt-5 bg-opacity-75 h-3/4 w-1/5 fixed top-14 left-0 z-20 transition-all duration-300 ease-in-out">
           <div className="container mx-auto flex flex-col items-center space-y-8 py-12 text-center">
@@ -84,7 +154,7 @@ export default function CustomNavbar() {
             </IconButton>
 
             {/* Mobile Links */}
-            {navLinks}
+            {mobileNavLinks}
           </div>
         </div>
       )}

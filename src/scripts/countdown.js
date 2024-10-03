@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-let countDownDate = new Date("August 6, 2024 15:00:00").getTime();
+let countDownDate = new Date("August 15, 2024 15:00:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function() {
@@ -20,7 +20,7 @@ let x = setInterval(function() {
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
-  // If the count down is over, write some text 
+  // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "Atlas School Graduate 2024!";
