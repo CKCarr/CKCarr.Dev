@@ -9,8 +9,8 @@ import Divider from '../Divider.js';
 function ProjectPortfolio() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTags, setSelectedTags] = useState([]);
-  const [isSticky, setIsSticky] = useState(true); // For toggling stickiness
-  const certificationsRef = useRef(null); // Ref to the certifications section
+  const [isSticky, setIsSticky] = useState(true); 
+  const certificationsRef = useRef(null);
 
   // Extract all unique tags dynamically from projectsData
   const allTags = [...new Set(projectsData.flatMap(project => project.tags))];
@@ -64,7 +64,7 @@ function ProjectPortfolio() {
             <button
               key={idx}
               onClick={() => setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag])}
-              className={`px-4 py-2 rounded ${selectedTags.includes(tag) ? 'bg-darkcyan text-white' : 'bg-white text-darkcyan'} border-2 border-darkcyan hover:bg-darkcyan hover:text-white transition `}
+              className={`px-4 py-2 rounded ${selectedTags.includes(tag) ? 'bg-darkcyan hover:text-plum ' : 'bg-white text-darkcyan'} border-2 border-darkcyan hover:bg-darkcyan hover:text-white transition `}
             >
               {tag}
             </button>
