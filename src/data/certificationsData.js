@@ -31,7 +31,7 @@ const certificationsData = [
     id: 4,
     title: "Responsive Web Design",
     platform: "FreeCodeCamp",
-    link: "https://www.freecodecamp.org/certification/example4"
+    link: "https://www.freecodecamp.org/certification/CKCarr/responsive-web-design"
   },
   {
     id: 5,

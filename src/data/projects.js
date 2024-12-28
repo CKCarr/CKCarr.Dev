@@ -59,7 +59,7 @@ const projectsData = [
     id: 7,
     name: "Headphones",
     image: require("../assets/images/headphones.png"),
-    description: "",
+    description: "Javascript HTML and CSS project",
     tags: ["HTML", "JavaScript", "CSS"],
     link: "https://ckcarr.github.io/holbertonschool-headphones/4-index"
   }

@@ -7,7 +7,7 @@ import TagsComponent from './TagsComponent';
 function ProjectCard({ project }) {
   return (
     <div className="group relative w-full p-4">
-      <Card className="relative overflow-hidden shadow-lg rounded-lg transform transition-transform hover:scale-105 w-full h-80">
+      <Card className="relative overflow-hidden shadow-lg rounded-lg transform transition-transform hover:scale-105 w-full h-80 hover:border-2 hover:border-darkcyan">
         {/* Project Image */}
         <ProjectImg src={project.image} alt={project.name} />
 
@@ -25,7 +25,7 @@ function ProjectCard({ project }) {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 bg-darkcyan text-plum px-4 py-2 rounded hover:bg-blue-700 transition"
+                className="mt-4 text-md border-2 border-darkcyan text-plum px-4 py-2 rounded hover:bg-darkpurple hover:border-2 hover:border-plum hover:text-white transition"
               >
                 View Project
               </a>
