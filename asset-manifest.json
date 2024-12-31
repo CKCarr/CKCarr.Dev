@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.12ffcc2f.css",
-    "main.js": "/static/js/main.011c1344.js",
+    "main.js": "/static/js/main.06d0a040.js",
     "static/media/headphones.png": "/static/media/headphones.79bd9bee61d098b3dc42.png",
     "static/media/BreakfastHacksprint-project.png": "/static/media/BreakfastHacksprint-project.f0c11df0a71164fb2bfb.png",
     "static/media/pc-monitor.png": "/static/media/pc-monitor.d83b34b954ab2709968c.png",
@@ -21,15 +21,16 @@
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/process2.png": "/static/media/process2.fde37f769d18abee91a9.png",
     "static/media/discover-text.png": "/static/media/discover-text.70cb508cd8bc1f7c7551.png",
+    "static/media/EmployeeManager.png": "/static/media/EmployeeManager.238da3fee41feaa80c28.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
     "main.12ffcc2f.css.map": "/static/css/main.12ffcc2f.css.map",
-    "main.011c1344.js.map": "/static/js/main.011c1344.js.map"
+    "main.06d0a040.js.map": "/static/js/main.06d0a040.js.map"
   },
   "entrypoints": [
     "static/css/main.12ffcc2f.css",
-    "static/js/main.011c1344.js"
+    "static/js/main.06d0a040.js"
   ]
 }
