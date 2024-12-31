@@ -2,7 +2,7 @@ const projectsData = [
   {
     id: 1,
     name: "Museum of Imagination",
-    image: require("../assets/images/MuseumOfImagination-project.png"),
+    image: require("../assets/images/projects/MuseumOfImagination-project.png"),
     description: "A virtual museum experience using modern web technologies.",
     tags: ["HTML", "CSS", "JavaScript", "Three.js"],
     link: "https://wonderland-3c94c.firebaseapp.com/index.html"
@@ -10,7 +10,7 @@ const projectsData = [
   {
     id: 2,
     name: "Breakfast Bites & Bytes",
-    image: require("../assets/images/BreakfastHacksprint-project.png"),
+    image: require("../assets/images/projects/BreakfastHacksprint-project.png"),
     description: "A website for healthy breakfast recipes powered by APIs.",
     tags: ["HTML", "CSS", "Bootstrap"],
     link: "https://ckcarr.github.io/breakfast_hacksprint/"
@@ -44,7 +44,7 @@ const projectsData = [
     name: "A Way Home - Pet Lost & Found App",
     image: require("../assets/images/ck-logo.png"),
     description: "Capstone project for a lost and found pet application using React and Next.js.",
-    tags: ["Next.js", "React", "Tailwind CSS", "API"],
+    tags: ["Next.js", "React", "Tailwind CSS", "API", "Express"],
     link: "https://www.youtube.com/watch?v=z-WmWKJJnDc"
   },
   {
@@ -55,13 +55,21 @@ const projectsData = [
     tags: ["React", "JavaScript", "Movie API", "Login"],
     link: "https://github.com/CKCarr/atlas-cinema-guru"
   },
-    {
-    id: 7,
+  {
+    id: 8,
     name: "Headphones",
-    image: require("../assets/images/headphones.png"),
+    image: require("../assets/images/projects/headphones.png"),
     description: "Javascript HTML and CSS project",
     tags: ["HTML", "JavaScript", "CSS"],
     link: "https://ckcarr.github.io/holbertonschool-headphones/4-index"
+  },
+  {
+    id: 9,
+    name: "MERN Employee Manager",
+    image: require("../assets/images/projects/EmployeeManager.png"),
+    description: "MERN stack application for managing employees.",
+    tags: ["MongoDB", "JavaScript", "CSS", "React", "Express", "Node.js"],
+    link: "https://www.youtube.com/watch?v=9igmP44iPto&t=14s"
   }
 ];
 
